@@ -1,11 +1,11 @@
-E-commerce Store Database
-Overview
+**E-commerce Store Database
+Overview**
 
 This project is a relational database system for a simple E-commerce Store, built in MySQL.
 It covers customers, products, suppliers, orders, payments, reviews, and more.
 
-The design demonstrates:
-
+**The design demonstrates:
+**
 One-to-One relationships (customer ↔ profile, product ↔ inventory)
 
 One-to-Many relationships (customer ↔ orders, customer ↔ addresses, product ↔ reviews)
@@ -14,8 +14,8 @@ Many-to-Many relationships (products ↔ categories, orders ↔ products)
 
 Proper constraints (PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK).
 
-Database Schema
-
+**Database Schema
+**
 customers – stores user accounts
 
 customer_profiles – additional profile info (1:1 with customers)
@@ -40,14 +40,16 @@ payments – payments for orders
 
 reviews – customer product rev
 
-Verify
+**Verify**
 Run simple queries to check data:
 
 SELECT * FROM customers;
+
 SELECT * FROM orders;
+
 SELECT * FROM order_items;
 
-Features
+**Features**
 
 Enforces referential integrity with foreign keys.
 
@@ -55,7 +57,7 @@ Prevents invalid data using NOT NULL, UNIQUE, and CHECK constraints.
 
 Models realistic E-commerce workflows: customer signup, product listing, orders, payments, and reviews.
 
-Deliverables
+**Deliverables**
 
 ecommerce_db.sql – full database schema with constraints
 
@@ -63,4 +65,4 @@ README.md – documentation (this file)
 
 Sample seed data (2 rows per table)
 
-iews
+
